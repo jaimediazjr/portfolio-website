@@ -1,5 +1,8 @@
 body{
-    background-color: gray;
+    background-color: rgb(0, 0, 0);
+    margin: none;
+    padding: none;
+    color: white;
 }
 a{
     color: white;
@@ -14,6 +17,7 @@ a:hover{
     text-decoration-color: antiquewhite;
 }
 .nav-row{
+    
     display: flex;
     flex-direction:row;
     background-color: black;
@@ -22,11 +26,19 @@ a:hover{
     color: white;
 }
 header{
+    color: white;
     padding-top: 3em;
     font-size: 40px;
 }
-footer{
-    position: absolute;
+#footer{
+    position:absolute;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+#footer-aboutme{
+    position:static;
     bottom: 0;
     background-color: black;
     width: 100%;
@@ -37,3 +49,39 @@ footer{
     background-color: orange;
 
 } */
+.aboutme-row{
+    display: flex;
+    flex-direction: row;
+    
+}
+.aboutme-row-invert{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.article-border{
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    margin-left: 100px;
+    width: 30rem;
+    padding: 1em;
+    
+}
+.article-border-invert{
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    margin-right: 100px;
+    width: 30rem;
+    padding: 1em;
+    
+}
+.image-pad{
+    padding-left: 100px;
+    /* margin-left: 100px; */
+}
+.image-pad-invert{
+    padding-right: 100px;
+    /* margin-left: 100px; */
+}
+#img{
+    border-radius: 50%;
+}
