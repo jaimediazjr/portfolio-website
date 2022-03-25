@@ -30,6 +30,11 @@ header{
     padding-top: 3em;
     font-size: 40px;
 }
+.header-whoami{
+    color: white;
+    font-size: 25px;
+    padding-top: 3em;
+}
 #footer{
     position:absolute;
     bottom: 0;
@@ -44,11 +49,6 @@ header{
     width: 100%;
     height: 100px;
 }
-/* .links{
-    border: 5px solid purple;
-    background-color: orange;
-
-} */
 .aboutme-row{
     display: flex;
     flex-direction: row;
@@ -58,12 +58,19 @@ header{
     display: flex;
     flex-direction: row-reverse;
 }
+.border-title {
+    width: 30rem;
+    font-size: 30px;
+    margin-left: 100px;
+
+}
 .article-border{
     border: 2px solid rgb(255, 255, 255);
     color: white;
     margin-left: 100px;
     width: 30rem;
     padding: 1em;
+    height: 185px;
     
 }
 .article-border-invert{
@@ -76,12 +83,48 @@ header{
 }
 .image-pad{
     padding-left: 100px;
-    /* margin-left: 100px; */
+    margin-left: 100px;
 }
 .image-pad-invert{
     padding-right: 100px;
-    /* margin-left: 100px; */
+    margin-left: 100px;
 }
-#img{
+.img{
     border-radius: 50%;
 }
+#img2{
+    border-radius: 50%;
+}
+.title{
+    text-align: center;
+    font-size: 100px;
+}
+.title-whoami {
+    text-align: center;
+    font-size: 50px;
+}
+.title-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 10em;
+    margin-bottom: none;
+    align-items:baseline;
+
+}
+/* .title-row{
+    display: flex;
+    flex-direction: column;
+   align-items:flex-start;
+} */
+
+  .whoami-text {
+      border: 2px solid orange;
+      font-size: x-large;
+      width: 50%;
+      margin: auto;
+      
+  }
