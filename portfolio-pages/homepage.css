@@ -3,7 +3,9 @@ body{
     margin: none;
     padding: none;
     color: white;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 a{
     color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,6 +17,9 @@ a{
 a:hover{ 
     text-decoration:underline;
     text-decoration-color: antiquewhite;
+}
+.line{
+    border: 1px solid white;
 }
 .nav-row{
     
@@ -33,7 +38,9 @@ header{
 .header-whoami{
     color: white;
     font-size: 25px;
-    padding-top: 3em;
+    padding-top: 2em;
+    margin-left: 100px;
+    font-size: 100px;
 }
 #footer{
     position:absolute;
@@ -79,6 +86,7 @@ header{
     margin-right: 100px;
     width: 30rem;
     padding: 1em;
+    height: 280px;
     
 }
 .image-pad{
@@ -99,10 +107,6 @@ header{
     text-align: center;
     font-size: 100px;
 }
-.title-whoami {
-    text-align: center;
-    font-size: 50px;
-}
 .title-img {
     display: block;
     margin-left: auto;
@@ -115,16 +119,39 @@ header{
     align-items:baseline;
 
 }
-/* .title-row{
+.title-row{
     display: flex;
-    flex-direction: column;
-   align-items:flex-start;
-} */
+    flex-direction: row;
+   
+}
 
   .whoami-text {
-      border: 2px solid orange;
-      font-size: x-large;
-      width: 50%;
-      margin: auto;
+      /* border: 2px solid rgb(160, 159, 158); */
+      font-size: 20px;
+      width: 500px;
+      margin-left: 100px;
       
   }
+  .whoimg {
+    margin-left: 100px;
+    margin-top: 200px;
+  }
+  .whoami-name {
+    margin-left: 100px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color:antiquewhite;
+  }
+  .odds {
+    /*background-color: black; /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(219, 207, 152));
+  }
+  .evens {
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(69, 69, 70));
+  }
+  /**
+
+  rgb(219, 207, 152)
+  rgb(63, 26, 197)
+  */
