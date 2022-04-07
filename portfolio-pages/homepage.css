@@ -1,9 +1,24 @@
 body{
-    background-color: rgb(0, 0, 0);
-    margin: none;
-    padding: none;
+    /* background-color: rgb(0, 0, 0); */
+    /* margin: none;
+    padding: none; */
     color: white;
     font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* background-image: url("../IMG_0266.jpg"); */
+    background: linear-gradient(-45deg, #000000, #000000, #393b3b, #000000);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .a{
@@ -11,26 +26,15 @@ body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: large;
     text-decoration: none;
-    padding: none;
-    /* box-shadow: inset 0 0 0 0 yellow;
-    transition: ease-out 0.3s; */
     position: relative;
-    margin: none;
-    
-    
 }
 .a:hover::after{ 
-    /* text-decoration:underline;
-    text-decoration-color: antiquewhite; */
-    /* box-shadow: inset 300px 0 0 0 yellow;
-    color: black;
-    height: min-content; */
     transform: scaleX(1);
     transform-origin: left;
 
 }
 .a::after {
-    content: "";
+    content: " ";
     position:absolute;
     left: 0;
     bottom: 0;
@@ -38,36 +42,28 @@ body{
     height: 2px;
     background-color: currentColor;
     
-
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 250ms ease-in;
 }
-.line{
+/* .line{
     border: 1px solid white;
-}
+    margin-top: 20rem;
+} */
 .nav-row{
     
     display: flex;
     flex-direction:row;
     justify-content: end;
-    background-color: black;
-    gap: 60px;
-    
-    color: white;
+    gap: 4rem;
 }
 header{
     color: white;
     padding-top: 3em;
     font-size: 40px;
 }
-.header-whoami{
-    color: white;
-    font-size: 25px;
-    padding-top: 2em;
-    margin-left: 100px;
-    font-size: 100px;
-}
+
+
 /* #footer{
     position:absolute;
     bottom: 0;
@@ -75,36 +71,42 @@ header{
     width: 100%;
     height: 100px;
 } */
-#footer-aboutme{
+.footer-style{
     position:relative;
     bottom: 0;
-    background-color: black;
     width: 100%;
-    height: 100px;
+    height: 2rem;
 }
-.aboutme-row{
+/* .aboutme-row{
     display: flex;
     flex-direction: row;
-}
+} */
 .aboutme-row-invert{
     display: flex;
     flex-direction: row-reverse;
 }
- .odds {
+ .fade1 {
     /*background-color: black; /* For browsers that do not support gradients */
     background-image: linear-gradient(rgb(0, 0, 0), rgb(219, 207, 152));
   }
-  .evens {
+  .fade2 {
     background-image: linear-gradient(rgb(0, 0, 0), rgb(69, 69, 70));
   }
+  
 .border-title {
     width: 30rem;
-    font-size: 30px;
-    margin-left: 100px;
+    font-size: 2rem;
+    margin-left: auto;
 
 }
+/* .border-title-invert {
+    width: 30rem;
+    font-size: 2rem;
+    margin-left:auto;
+
+} */
 .article-border{
-    border: 2px solid rgb(203, 196, 196);
+    border: .5rem double rgb(203, 196, 196);
     color: white;
     margin-left: 6rem;
     width: 30rem;
@@ -113,9 +115,9 @@ header{
     
 }
 .article-border-invert{
-    border: 2px solid rgb(255, 255, 255);
+    border: .5rem double rgb(203, 196, 196);
     color: white;
-    margin-right: 6rem;
+    margin-right: 4rem;
     width: 30rem;
     padding: 1em;
     height: min-content;
@@ -129,12 +131,12 @@ header{
     padding-right: 6rem;
     margin-left: 9rem;
 }
-.img{
+.img-radius{
     border-radius: 50%;
 }
-#img2{
+/* #img2{
     border-radius: 50%;
-}
+} */
 .title{
     text-align: center;
     font-size: 100px;
@@ -156,43 +158,45 @@ header{
     flex-direction: row;
    
 }
-
-  .whoami-text {
+.about-me-header{
+    /* color: white; */
+    padding-top: 2em;
+    margin-left: 6rem;
+    font-size: 6rem;
+}
+.about-me-name {
+    margin-left: 6rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    color:antiquewhite;
+  }
+  .about-me-text {
       /* border: 2px solid rgb(160, 159, 158); */
       font-size: 20px;
       width: 500px;
       margin-left: 100px;
       
   }
-  .whoimg {
-    margin-left: 100px;
-    margin-top: 200px;
+  .about-me-img {
+    margin-left: 6rem;
+    margin-top: 12rem;
   }
-  .whoami-name {
-    margin-left: 100px;
-    font-size: 30px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    color:antiquewhite;
-  }
- 
-  /**
 
-  rgb(219, 207, 152)
-  rgb(63, 26, 197)
-  */
+
   .center {
        display: block;
   margin-left: auto;
   margin-right: auto;
   }
   .myjourney-text {
-    border: 2px solid rgb(160, 159, 158);
+    border: .5rem double rgb(160, 159, 158);
     font-size: 20px;
-    width: 900px;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
+    width: 56rem;
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
     
 }
 
@@ -202,4 +206,5 @@ header{
 .none:hover {
     text-decoration: underline;
 }
+
 
